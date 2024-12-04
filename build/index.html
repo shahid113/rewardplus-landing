@@ -10,24 +10,45 @@
 <body class="bg-gray-900 text-white">
     <div class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
         <!-- Header -->
-        <header class="fixed w-full z-50 bg-black/30 backdrop-blur-md py-4">
-            <div class="container mx-auto flex justify-between items-center px-4">
-                <div class="flex items-center space-x-3">
-                    <img src="images/rp.png"
-                    width="50" 
-                    height="50" 
-                     alt="Reward+ Logo" class="rounded-full">
-                    <h1 class="text-2xl font-bold tracking-tight">Reward+</h1>
-                </div>
-                <nav class="flex items-center space-x-4">
-                    <a href="#features" class="hover:text-cyan-400 transition">Features</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-full transition-all flex items-center space-x-2">
+             <!-- Header -->
+             <header class="fixed w-full z-50 bg-black/30 backdrop-blur-md py-4">
+                <div class="container mx-auto px-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <img src="images/rp.png"
+                            width="50" 
+                            height="50" 
+                             alt="Reward+ Logo" class="rounded-full">
+                            <h1 class="text-2xl font-bold tracking-tight">Reward+</h1>
+                        </div>
                         
-                        <span>Download</span>
-                    </a>
-                </nav>
-            </div>
-        </header>
+                        <!-- Mobile Menu Toggle -->
+                        <div class="md:hidden">
+                            <button id="mobile-menu-toggle" class="focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+    
+                        <!-- Navigation -->
+                        <nav class="hidden md:flex items-center space-x-4">
+                            <a href="#features" class="hover:text-cyan-400 transition">Features</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-full transition-all flex items-center space-x-2">
+                                <span>Download</span>
+                            </a>
+                        </nav>
+                    </div>
+    
+                    <!-- Mobile Dropdown Menu -->
+                    <div id="mobile-menu" class="md:hidden hidden absolute left-0 right-0 top-full bg-black/90 mt-4 p-4 space-y-4">
+                        <a href="#features" class="block text-center hover:text-cyan-400 transition">Features</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" class="block bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-full transition-all text-center">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </header>
 
         <!-- Hero Section -->
         <section class="container mx-auto pt-24 px-4 relative">
@@ -133,6 +154,24 @@
                 </div>
             </div>
         </footer>
+
+          
+        <script>
+            // Mobile menu toggle functionality
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        </script>
     </div>
 </body>
 </html>

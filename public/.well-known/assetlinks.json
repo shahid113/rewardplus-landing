@@ -1,0 +1,11 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.nexumbyte.rewardplus",
+        "sha256_cert_fingerprints":
+          ["97:0C:12:A0:4C:E0:F6:C4:79:7A:71:EE:E1:D1:3B:5E:1F:21:0E:40:06:42:67:C2:49:1F:79:4B:E6:CD:60:2A"]
+      }
+    }
+  ]

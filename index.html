@@ -6,29 +6,27 @@
     <title>Reward+ - Earn Rewards Through Daily Tasks</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9851155688771143"
-     crossorigin="anonymous"></script>
     <style>
-        /* Custom scrollbar */
+        /* Custom scrollbar for light theme */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #1f2937;
+            background: #f3f4f6;
         }
         ::-webkit-scrollbar-thumb {
-            background: #4b5563;
+            background: #d1d5db;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #6b7280;
+            background: #a1a1aa;
         }
     </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
-    <div class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+<body class="bg-white text-gray-900 min-h-screen font-sans">
+    <div class="min-h-screen bg-gradient-to-br from-white via-gray-50 to-gray-100">
         <!-- Header -->
-        <header class="fixed w-full z-50 bg-black/30 backdrop-blur-md py-4">
+        <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md py-4 shadow-sm">
             <div class="container mx-auto px-4">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center space-x-3">
@@ -36,14 +34,14 @@
                              width="50" 
                              height="50" 
                              alt="Reward+ Logo" 
-                             class="rounded-full object-cover">
-                        <h1 class="text-2xl font-bold tracking-tight">Reward+</h1>
+                             class="rounded-xl object-cover shadow-md border border-gray-200">
+                        <h1 class="text-2xl font-bold tracking-tight text-gray-900">Reward+</h1>
                     </div>
                     
                     <!-- Mobile Menu Toggle -->
                     <div class="md:hidden">
-                        <button id="mobile-menu-toggle" class="focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <button id="mobile-menu-toggle" class="focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </button>
@@ -51,9 +49,9 @@
 
                     <!-- Navigation -->
                     <nav class="hidden md:flex items-center space-x-4">
-                        <a href="#features" class="hover:text-cyan-400 transition">Features</a>
+                        <a href="#features" class="hover:text-blue-500 transition font-medium">Features</a>
                         <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" 
-                           class="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-full transition-all flex items-center space-x-2">
+                           class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full transition-all flex items-center space-x-2 text-white font-semibold shadow">
                             <span>Download</span>
                         </a>
                     </nav>
@@ -61,11 +59,11 @@
 
                 <!-- Mobile Dropdown Menu -->
                 <div id="mobile-menu" 
-                     class="md:hidden fixed left-0 right-0 top-full bg-black/90 transition-all duration-300 ease-in-out transform origin-top scale-y-0 opacity-0">
+                     class="md:hidden fixed left-0 right-0 top-full bg-white/95 shadow-lg transition-all duration-300 ease-in-out transform origin-top scale-y-0 opacity-0 rounded-b-2xl">
                     <div class="p-4 space-y-4">
-                        <a href="#features" class="block text-center hover:text-cyan-400 transition py-2">Features</a>
+                        <a href="#features" class="block text-center hover:text-blue-500 transition py-2 font-medium">Features</a>
                         <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" 
-                           class="block bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded-full transition-all text-center">
+                           class="block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full transition-all text-center text-white font-semibold shadow">
                             Download
                         </a>
                     </div>
@@ -77,15 +75,15 @@
         <section class="container mx-auto pt-24 px-4 relative">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="space-y-6">
-                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight animate__animated animate__fadeInLeft">
-                        Turn Daily Tasks into <span class="text-cyan-400">Exciting Rewards</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight animate__animated animate__fadeInLeft text-gray-900">
+                        Turn Daily Tasks into <span class="text-blue-500">Exciting Rewards</span>
                     </h2>
-                    <p class="text-lg md:text-xl text-gray-300 animate__animated animate__fadeInLeft animate__delay-1s">
+                    <p class="text-lg md:text-xl text-gray-600 animate__animated animate__fadeInLeft animate__delay-1s">
                         Complete simple daily challenges and transform your effort into instant rewards with Reward+
                     </p>
                     <div class="flex space-x-4 animate__animated animate__fadeInUp animate__delay-2s">
                         <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" 
-                           class="bg-cyan-600 hover:bg-cyan-700 px-6 py-3 rounded-full flex items-center space-x-2 transform hover:scale-105 transition-all">
+                           class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full flex items-center space-x-2 transform hover:scale-105 transition-all text-white font-semibold shadow">
                             <img src="images/google-play-store-icon.png" 
                                  width="30" 
                                  height="30" 
@@ -96,15 +94,15 @@
                     </div>
                 </div>
                 
-                <div class="relative animate__animated animate__fadeInRight">
+                <div class="relative animate__animated animate__fadeInRight flex justify-center items-center">
                     <img 
-                        src="images/dd.jpeg" 
-                        width="600" 
+                        src="images/banner.jpg" 
+                        width="400" 
                         height="400" 
                         loading="lazy" 
                         decoding="async" 
-                        alt="Reward+ App Screenshot" 
-                        class="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform object-cover"
+                        alt="Reward+ App Screenshot"
+                        class="rounded-3xl shadow-lg border border-gray-200 object-cover transform hover:scale-105 transition-all max-w-full h-auto"
                     />
                 </div>
             </div>
@@ -113,36 +111,36 @@
         <!-- Features Section -->
         <section id="features" class="container mx-auto py-16 px-4">
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-6 rounded-2xl hover:bg-gray-800/70 transition-all space-y-4 text-center">
+                <div class="bg-white p-6 rounded-3xl hover:bg-blue-50 transition-all space-y-4 text-center shadow border border-gray-100">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                     </svg>
-                    <h3 class="text-2xl font-bold">Easy Tasks</h3>
-                    <p class="text-gray-300">Simple daily challenges anyone can complete</p>
+                    <h3 class="text-2xl font-bold text-gray-900">Easy Tasks</h3>
+                    <p class="text-gray-500">Simple daily challenges anyone can complete</p>
                 </div>
-                <div class="bg-gray-800/50 p-6 rounded-2xl hover:bg-gray-800/70 transition-all space-y-4 text-center">
+                <div class="bg-white p-6 rounded-3xl hover:bg-blue-50 transition-all space-y-4 text-center shadow border border-gray-100">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <h3 class="text-2xl font-bold"> Rewards</h3>
-                    <p class="text-gray-300">Convert points to exciting rewards</p>
+                    <h3 class="text-2xl font-bold text-gray-900">Rewards</h3>
+                    <p class="text-gray-500">Convert points to exciting rewards</p>
                 </div>
-                <div class="bg-gray-800/50 p-6 rounded-2xl hover:bg-gray-800/70 transition-all space-y-4 text-center">
+                <div class="bg-white p-6 rounded-3xl hover:bg-blue-50 transition-all space-y-4 text-center shadow border border-gray-100">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                    <h3 class="text-2xl font-bold">Unlimited Potential</h3>
-                    <p class="text-gray-300">More tasks, more points, more rewards</p>
+                    <h3 class="text-2xl font-bold text-gray-900">Unlimited Potential</h3>
+                    <p class="text-gray-500">More tasks, more points, more rewards</p>
                 </div>
             </div>
         </section>
 
         <!-- New Google Play and Payment Section -->
         <section class="container mx-auto py-16 px-4">
-            <div class="bg-gray-800/50 rounded-2xl p-8">
+            <div class="bg-white rounded-3xl p-8 shadow border border-gray-100">
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
-                        <h2 class="text-3xl font-bold mb-4">Get Reward+ Now</h2>
+                        <h2 class="text-3xl font-bold mb-4 text-gray-900">Get Reward+ Now</h2>
                         <a href="https://play.google.com/store/apps/details?id=com.nexumbyte.rewardplus" target="_blank" class="block">
                             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                                  alt="Get it on Google Play" 
@@ -150,20 +148,19 @@
                             />
                         </a>
                     </div>
-                   
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-black/30 py-8 mt-16">
+        <footer class="bg-white/80 py-8 mt-16 border-t border-gray-200">
             <div class="container mx-auto text-center px-4">
-                <p>&copy; 2024 Reward+. All Rights Reserved.</p>
+                <p class="text-gray-500">&copy; 2024 Reward+. All Rights Reserved.</p>
                 <div class="mt-4 space-x-4">
-                    <a href="https://sites.google.com/view/rewardplusprivacypolicy/home" class="text-gray-400 hover:text-white">Privacy Policy</a>
-                    <a href="https://sites.google.com/view/reardplus-terms-and-conditions/home" class="text-gray-400 hover:text-white">Terms and Condtion</a>
-                    <a href="https://sites.google.com/view/rewardplus-redemption-policy/home" class="text-gray-400 hover:text-white">Redeem Policy</a>
-                    <a href="mailto:rewardplusofficial@gmail.com" class="text-gray-400 hover:text-white">Contact</a>
+                    <a href="https://sites.google.com/view/rewardplusprivacypolicy/home" class="text-gray-400 hover:text-blue-500">Privacy Policy</a>
+                    <a href="https://sites.google.com/view/reardplus-terms-and-conditions/home" class="text-gray-400 hover:text-blue-500">Terms and Condition</a>
+                    <a href="https://sites.google.com/view/rewardplus-redemption-policy/home" class="text-gray-400 hover:text-blue-500">Redeem Policy</a>
+                    <a href="mailto:rewardplusofficial@gmail.com" class="text-gray-400 hover:text-blue-500">Contact</a>
                 </div>
             </div>
         </footer>
